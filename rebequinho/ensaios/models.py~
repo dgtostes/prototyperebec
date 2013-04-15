@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 class ClinicalTrial(models.Model):
 	title = models.CharField(max_length=150)
 	tags = models.TextField()
-	user_id = models.ForeignKey(User)
+	user_id = models.ForeignKey(Manufacturer)
 	utn_number = models.CharField(max_length=150)
 	date_registration_pt = models.DateField()
 	scientific_title_pt = models.CharField(max_length=150)

@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;" />
+<title>Pagina Inicial | Registro Brasileiro de Ensaios Clinicos</title>
+
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/logada.css"/>
+<link rel="shortcut icon" href="{{ MEDIA_URL }}images/icone.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="header_left"> 
+    <div id="header_right">
+    
+    
+    
+    
+    
+    <div id="header">
+		<div id="barra_governo"> 
+			<img src="{{ STATIC_URL }}images/barragoverno.jpg" alt="Barra do Governo Federal" />
+		</div>
+		<div id="miolo">
+          <div id="menu_logo"> 
+            <div id="menu_acessorio"> 
+                <ul>
+                    <li><img src="images/seta-perfil.png"/><a href="english.html">English</a></li>
+                    <li><img src="images/seta-perfil.png"/><a href="espanol.html">Español</a></li>
+                    <li><img src="images/seta-perfil.png"/><a href="acessibilidade.html">Acessibilidade</a></li>
+                    <li><a href="#"><img src="images/aumentarletra.jpg" alt="Aumentar a letra" /></a> </li>
+                    <li><a href="#"><img src="images/diminuirletra.jpg" alt="Diminuir a letra" /></a> </li>
+                    <li><a href="#"><img src="images/contraste.jpg" alt="Contraste" /></a></li>
+                </ul>
+            </div>
+        	
+            <div id="logo"> 
+                <a href="home.html"><img src="images/logo.png" alt="Registro Brasileiro de Ensaios Clínicos"> </img></a>
+            </div>
+			
+			<div id="linha_azul"> &nbsp </div>
+			
+		
+         </div>
+            <div id="curva"></div>
+
+            
+            <div id="perfil">
+				<div id="titulo-perfil">Perfil Registrante</br>
+                Bem vindo fulano de tal
+                </div>
+           
+				<div id="links-perfil-logado">
+					<ul>
+                    	<li><a href="perfil.html"><img src="images/img_perfil.jpg" alt="sair" />Perfil</a></li>
+						<li><a href="sair.html"><img src="images/img_sair.jpg" alt="sair" />Sair</a></li>
+                    </ul>
+				</div>
+    
+            </div>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="home.html"><img src="images/casinha.png" alt="Página inicial" /></a></li>
+				<li><a href="registrados.html"><img src="images/seta-menu.png"/>Ensaios Registrados</a></li>
+				<li><a href="recrutando.html"><img src="images/seta-menu.png"/>Recrutando</a></li>
+				<li><a href="sobre.html"><img src="images/seta-menu.png"/>Sobre</a></li>
+				<li><a href="ajuda.html"><img src="images/seta-menu.png"/>Ajuda</a></li>
+				<li><a href="faleconosco.html"><img src="images/seta-menu.png"/>Fale Conosco</a></li>			
+			</ul>
+		</div>
+		
+		<div id="bt-semlogar"> &nbsp </div> 
+		
+	<div class="reset"></div>
+    </div>
+    
+    --------------------------------> load base 
+{% block corpo %}
+    <!-- body -->
+{% endblock%}
+
+</body>
+</html>

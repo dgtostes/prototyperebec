@@ -4,16 +4,6 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
-##
-from django.conf import settings
-
-if settings.DEBUG:
-    # serve static files from develpment server
-    urlpatterns += patterns('',
-        url(r'^static/(?P<path>.*)$', 'django.views.static.serve',
-            {'document_root': settings.MEDIA_ROOT}),
-    )
-##
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'rebequinho.views.index'),
@@ -29,3 +19,12 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 )
+
+
+from django.conf import settings
+if settings.DEBUG:
+    # serve static files from develpment server
+    urlpatterns += patterns('',
+        url(r'^static/(?P<path>.*)$', 'django.views.static.serve',
+            {'document_root': settings.MEDIA_ROOT}),
+    )
